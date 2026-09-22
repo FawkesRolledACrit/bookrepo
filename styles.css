@@ -1,3 +1,5 @@
+@font-face { font-family: 'MyUnderwood'; src: url('assets/MyUnderwood.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+
 :root {
   --ink: #e7e1d2;
   --muted: #a7a092;
@@ -87,4 +89,56 @@ input:focus, select:focus { outline: 2px solid var(--rust); outline-offset: 2px;
 .site-footer p { margin: 8px 0 0; font: .62rem var(--type); }
 .footer-links { display: flex; gap: 26px; align-items: center; font: .62rem var(--type); text-transform: uppercase; letter-spacing: .08em; }
 .copyright { grid-column: 1 / -1; padding-top: 25px; border-top: 1px solid var(--line); }
-@media (max-width: 760px) { body { font-size: 17px; } .site-header { padding: 23px 6vw; } nav a:not(.nav-cta) { display: none; } .hero { display: flex; flex-direction: column; align-items: flex-start; padding: 130px 8vw 80px; min-height: 0; } .hero-copy { order: 1; } .cover-wrap { order: 2; align-self: center; width: min(280px, 75%); margin-top: 45px; } .hero-actions { align-items: flex-start; flex-direction: column; } .signal-strip { gap: 13px 0; } .signal-strip span { padding: 0 12px; } .split-section { display: block; padding: 80px 9vw; } .section-label { margin-bottom: 35px; } .quote-section { padding: 100px 9vw; } .author-content { gap: 25px; } .copy-section { padding: 80px 7vw; } .copy-card { padding: 45px 22px; } .site-footer { display: block; } .footer-links { margin-top: 30px; } .copyright { margin-top: 30px !important; } }
+.site-header-solid { position: relative; background: rgba(17,19,19,.96); border-bottom: 1px solid var(--line); }
+.interior-page main { min-height: 70vh; }
+.page-hero { display: flex; justify-content: space-between; align-items: center; gap: 8vw; padding: 145px 15vw 105px; background: radial-gradient(ellipse at 75% 30%, rgba(76,91,77,.5), transparent 42%), var(--deep); border-bottom: 1px solid var(--line); }
+.page-hero h1 { font-size: clamp(3.7rem, 8vw, 8rem); color: var(--paper); }
+.page-dek { max-width: 650px; margin: 30px 0 0; color: var(--muted); font-size: clamp(1.25rem, 2.2vw, 1.8rem); }
+.book-page-hero { min-height: 570px; }
+.page-cover { width: min(255px, 36vw); transform: rotate(3deg); border: 1px solid rgba(207,198,176,.35); box-shadow: 25px 25px 45px rgba(0,0,0,.5); }
+.prose-section { display: grid; grid-template-columns: 1fr 2fr; gap: 8vw; padding: 105px 15vw; border-bottom: 1px solid var(--line); }
+.prose-content { max-width: 760px; }
+.prose-content p { color: var(--muted); }
+.prose-content a, .press-copy a { color: var(--paper); }
+.prose-content h2, .press-copy h2 { font-size: clamp(2rem, 4vw, 3.4rem); margin-bottom: 20px; }
+.prose-section-dark { background: #0b0d0d; }
+.author-note { display: flex; gap: 42px; align-items: center; max-width: 900px; margin: 0 auto; padding: 95px 8vw; color: var(--paper); font-size: clamp(1.4rem, 2.5vw, 2.1rem); line-height: 1.15; }
+.author-note p { margin: 0; }
+.page-cta { padding: 110px 15vw; text-align: center; background: radial-gradient(ellipse at center, rgba(163,77,61,.15), transparent 58%); }
+.page-cta h2 { margin-bottom: 25px; }
+.page-cta .text-link { margin-left: 25px; }
+.page-cta-copy { max-width: 600px; margin: 0 auto 30px; color: var(--muted); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 38px; }
+.tag-list span { padding: 8px 12px; border: 1px solid var(--line); color: var(--paper); font: .62rem var(--type); letter-spacing: .08em; text-transform: uppercase; }
+.reader-list { padding-left: 1.2em; color: var(--muted); }
+.reader-list li { padding: 10px 0; }
+.two-column-copy { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; }
+.press-grid { display: grid; grid-template-columns: minmax(180px, .7fr) 1.3fr; gap: 9vw; align-items: center; padding: 105px 15vw; border-bottom: 1px solid var(--line); }
+.press-art { text-align: center; }
+.press-cover { display: block; width: min(310px, 100%); margin: 0 auto 30px; transform: rotate(2deg); box-shadow: 20px 20px 35px rgba(0,0,0,.5); }
+.press-copy { max-width: 680px; }
+.press-copy strong { color: var(--paper); font-family: var(--type); font-size: .72em; letter-spacing: .08em; text-transform: uppercase; }
+.reading-header { padding: 115px 9vw 70px; text-align: center; background: radial-gradient(ellipse at center, rgba(76,91,77,.5), transparent 55%), var(--deep); border-bottom: 1px solid var(--line); }
+.reading-header h1 { color: var(--paper); font-size: clamp(3rem, 6vw, 6rem); }
+.reading-subtitle { margin: 22px 0 8px; color: var(--ink); font: 1.15rem var(--type); letter-spacing: .08em; text-transform: uppercase; }
+.reading-meta { color: var(--muted); margin: 0; }
+.chapter-content { max-width: 760px; margin: 0 auto; padding: 80px 35px 100px; color: #26231f; background: #d7cfbc; font-family: 'MyUnderwood', 'Courier New', monospace; font-size: 1rem; line-height: 1.72; box-shadow: 0 0 55px rgba(0,0,0,.22); }
+.chapter-content h2 { color: #342d27; font: 1.5rem var(--type); letter-spacing: .08em; text-align: center; text-transform: uppercase; margin: 0 0 60px; }
+.chapter-content > p { text-indent: 1.5em; margin: 0 0 1em; }
+.chapter-content > p:first-of-type { text-indent: 0; }
+.document-card { margin: 42px 2vw; padding: 32px 34px; color: #28251f; border: 1px solid rgba(48,40,31,.35); box-shadow: 4px 5px 0 rgba(48,40,31,.12); }
+.document-card p { margin: 0 0 1em; }
+.document-card p:last-child { margin-bottom: 0; }
+.handwritten { font-family: 'Caveat', 'Comic Sans MS', cursive; font-size: 1.15rem; transform: rotate(-.3deg); }
+.newspaper { font-family: Georgia, serif; font-size: .88rem; line-height: 1.45; background: #c7bda6; }
+.newspaper h3 { margin: 12px 0; font: 1.15rem var(--type); letter-spacing: .03em; text-align: center; }
+.document-heading { font-family: var(--type) !important; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; text-align: center; }
+.advertisement { font-family: Georgia, serif; text-align: center; background: #c9bea3; }
+.advertisement .document-heading { color: #64382d; font-size: .9rem; }
+.coded-message { background: #c3b99f; }
+.coded-message pre { margin: 0; white-space: pre-wrap; font: 1rem 'Courier New', monospace; letter-spacing: .08em; }
+.reading-end { padding: 100px 9vw; text-align: center; background: radial-gradient(ellipse at center, rgba(163,77,61,.15), transparent 58%); }
+.reading-end h2 { margin-bottom: 28px; }
+.reading-end .text-link { margin-left: 25px; }
+@media (max-width: 760px) { body { font-size: 17px; } .site-header { padding: 23px 6vw; } nav a:not(.nav-cta) { display: none; } .hero { display: flex; flex-direction: column; align-items: flex-start; padding: 130px 8vw 80px; min-height: 0; } .hero-copy { order: 1; } .cover-wrap { order: 2; align-self: center; width: min(280px, 75%); margin-top: 45px; } .hero-actions { align-items: flex-start; flex-direction: column; } .signal-strip { gap: 13px 0; } .signal-strip span { padding: 0 12px; } .split-section, .prose-section { display: block; padding: 80px 9vw; } .section-label { margin-bottom: 35px; } .quote-section { padding: 100px 9vw; } .author-content { gap: 25px; } .copy-section { padding: 80px 7vw; } .copy-card { padding: 45px 22px; } .site-footer { display: block; } .footer-links { margin-top: 30px; flex-wrap: wrap; } .copyright { margin-top: 30px !important; } .page-hero { display: block; padding: 110px 9vw 75px; } .page-cover { width: min(250px, 70vw); display: block; margin: 55px auto 0; } .author-note { display: block; padding: 75px 9vw; } .author-note .author-stamp { margin-bottom: 30px; } .page-cta { padding: 80px 9vw; } .page-cta .text-link { display: block; margin: 25px 0 0; } .two-column-copy, .press-grid { display: block; } .press-grid { padding: 80px 9vw; } .press-copy { margin-top: 65px; } .chapter-content { padding: 55px 24px 70px; font-size: .95rem; } .document-card { margin: 32px 0; padding: 25px 20px; } .reading-end .text-link { display: block; margin: 25px 0 0; } }
+
