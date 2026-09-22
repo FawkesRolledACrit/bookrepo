@@ -9,8 +9,11 @@ A static author and book website for *Monuments* by M. Fawkes.
 - `about.html` — author biography and contact information
 - `press.html` — press kit, cover download, book copy, and media contact
 - `sample.html` — the complete first chapter, styled with the embedded MyUnderwood book font
+- `archive.html` — in-world Serwick municipal archive and shareable case-file hook
 - `privacy.html` — form privacy information
 - `sitemap.xml` and `robots.txt` — search-engine discovery files
+- `Monuments_reviewer_targets.md` — researched reviewer and discovery targets
+- `Monuments_short_form_schedule.md` — one-week video/social schedule
 
 ## Current status
 
