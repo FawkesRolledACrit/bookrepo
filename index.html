@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Monuments by Morgan Fawkes — a literary cosmic-horror noir about memory, culpability, and impossible places.">
+  <meta name="author" content="Morgan Fawkes">
+  <meta property="og:title" content="Monuments — Morgan Fawkes">
+  <meta property="og:description" content="Some mysteries are built to keep you looking.">
+  <meta property="og:type" content="website">
+  <title>Monuments | Morgan Fawkes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Monuments home">MONUMENTS<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#book">The Book</a>
+      <a href="#author">Morgan Fawkes</a>
+      <a class="nav-cta" href="#copy">Request a Copy</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A literary cosmic-horror noir</p>
+        <h1 id="hero-title">Some mysteries<br><em>are built to keep you looking.</em></h1>
+        <p class="lede">A private investigator follows a dead student's last message into a drowned New England town where the buildings rearrange themselves, a theater casts him as its patient, and the machinery recognizes his hands.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#copy">Request a free copy</a>
+          <a class="text-link" href="#book">Enter Serwick <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="status"><span class="status-dot"></span> Currently in final review · Release date forthcoming</p>
+      </div>
+      <div class="cover-wrap">
+        <div class="cover-shadow"></div>
+        <img class="real-cover" src="assets/monuments-cover.jpg" alt="Cover of Monuments by M. Fawkes">
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Book details">
+      <span>Literary horror</span><span>Supernatural noir</span><span>Weird fiction</span><span>Serwick, Massachusetts</span>
+    </section>
+
+    <section id="book" class="split-section book-section">
+      <div class="section-label">01 / The case</div>
+      <div class="section-content">
+        <h2>The trail leads inward.</h2>
+        <p>Private investigator Vincent Trench has learned not to trust the world at night. He has learned not to trust his memories, either. When Sarah Collins asks him to investigate the death of her boyfriend, Stephen, the case offers one impossible lead: a message from a phone line that no longer exists.</p>
+        <p>The trail leads to Serwick, a drowned town where abandoned hotels rearrange themselves, a midnight theater knows his name, and every locked door seems to recognize his hands. Beneath the fog, something is preserving the wreckage of an old experiment—and something else is still trying to get out.</p>
+        <blockquote>“The machinery knows his body.”</blockquote>
+        <p class="small-note">For readers who like atmospheric mysteries, morally compromised narrators, and horror that leaves the light on after the last page.</p>
+      </div>
+    </section>
+
+    <section class="quote-section" aria-label="A line from Monuments">
+      <div class="quote-mark">“</div>
+      <p>There are things in this world plain reason can't survive looking at straight on.</p>
+      <div class="quote-credit">— Vincent Trench</div>
+    </section>
+
+    <section id="author" class="split-section author-section">
+      <div class="section-label">02 / The author</div>
+      <div class="section-content author-content">
+        <div class="author-stamp" aria-hidden="true">MF</div>
+        <div>
+          <h2>Morgan Fawkes</h2>
+          <p>Morgan Fawkes writes cosmic horror, supernatural noir, and strange fiction. Their work explores memory, identity, culpability, and the stories people construct when reality becomes too terrible to face directly.</p>
+          <p><em>Monuments</em> is their debut novella, blending hard-boiled investigation with surreal architecture, corrupted memories, and the slow realization that some mysteries are built to keep you looking.</p>
+          <a class="text-link" href="mailto:contact@monumentsbook.win">Contact Morgan <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="copy" class="copy-section" aria-labelledby="copy-title">
+      <div class="copy-card">
+        <p class="eyebrow">Reader's room</p>
+        <h2 id="copy-title">Ask for a free copy.</h2>
+        <p>Leave your email and Morgan will send release information and, when available, a free reader copy. If you read it, an honest review would help enormously—but there is no obligation, and no favorable review is ever required.</p>
+        <form id="copy-form" action="https://formspree.io/f/mqpaqbje" method="POST">
+          <input type="hidden" name="_subject" value="Monuments free copy request">
+          <label for="name">Name <span>(optional)</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="What should Morgan call you?">
+          <label for="email">Email address <span>(required)</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <label for="format">Preferred format</label>
+          <select id="format" name="preferred_format">
+            <option value="epub">EPUB</option>
+            <option value="kindle">Kindle/Amazon announcement</option>
+            <option value="either">Either is fine</option>
+          </select>
+          <label class="checkbox-label"><input type="checkbox" name="review_acknowledgement" value="yes" required> <span>I understand that, if I receive a copy and finish the book, an honest rating or review would help Morgan a great deal. I understand this is a request, not a requirement.</span></label>
+          <button class="button button-primary" type="submit">Send request</button>
+          <p class="form-note">Your information is used only to respond to this request and send book-related updates you explicitly choose to receive. No mailing address is needed. <a href="privacy.html">Privacy information</a>.</p>
+          <p class="form-success" id="form-success" role="status" hidden>Request received. Keep an eye on your inbox.</p>
+          <p class="form-error" id="form-error" role="alert" hidden>Something went wrong. Please try again or email Morgan directly.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><span class="wordmark">MONUMENTS<span>.</span></span><p>Written by Morgan Fawkes.</p></div>
+    <div class="footer-links"><a href="mailto:contact@monumentsbook.win">Contact</a><a href="privacy.html">Privacy</a><a href="#top">Back to top ↑</a></div>
+    <p class="copyright">© 2026 Morgan Fawkes. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
