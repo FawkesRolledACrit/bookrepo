@@ -33,11 +33,15 @@ h1, h2 { font-weight: 500; line-height: .95; margin: 0; }
 h1 { font-size: clamp(3.8rem, 7vw, 7.5rem); letter-spacing: -.04em; }
 h1 em { color: var(--paper); font-size: .55em; display: inline-block; margin-top: .2em; font-weight: 400; }
 .lede { color: var(--paper); font-size: clamp(1.15rem, 1.7vw, 1.42rem); max-width: 590px; margin: 37px 0; }
-.hero-actions { display: flex; gap: 27px; align-items: center; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 27px; align-items: center; }
 .button { display: inline-block; border: 0; cursor: pointer; font: .72rem var(--type); letter-spacing: .12em; text-transform: uppercase; padding: 15px 20px; text-decoration: none; transition: transform .2s, background .2s; }
 .button:hover { transform: translateY(-2px); }
 .button-primary { background: var(--rust); color: #f8eee3; }
 .button-primary:hover { background: #bd5c49; }
+.button-large { font-size: .95rem; letter-spacing: .16em; padding: 22px 46px; box-shadow: 0 0 0 1px rgba(163,77,61,.35), 0 14px 34px rgba(0,0,0,.45); }
+.button-large:hover { transform: translateY(-2px) scale(1.02); }
+@media (prefers-reduced-motion: no-preference) { .button-large { animation: buy-pulse 2.6s ease-in-out infinite; } }
+@keyframes buy-pulse { 0%, 100% { box-shadow: 0 0 0 1px rgba(163,77,61,.35), 0 14px 34px rgba(0,0,0,.45), 0 0 0 rgba(163,77,61,0); } 50% { box-shadow: 0 0 0 1px rgba(163,77,61,.6), 0 14px 34px rgba(0,0,0,.45), 0 0 26px rgba(163,77,61,.45); } }
 .text-link { color: var(--paper); font: .7rem var(--type); letter-spacing: .1em; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid var(--line); padding-bottom: 5px; }
 .status { color: var(--muted); margin-top: 48px; }
 .status-dot { width: 7px; height: 7px; display: inline-block; margin: 0 8px 1px 0; border-radius: 50%; background: var(--rust); box-shadow: 0 0 12px var(--rust); }

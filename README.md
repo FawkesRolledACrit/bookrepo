@@ -54,8 +54,7 @@ At the domain registrar, add the GitHub Pages records shown in the repository's 
 - Verify `https://monumentsbook.win/` in Google Search Console.
 - Submit `https://monumentsbook.win/sitemap.xml`.
 - Verify the domain in Bing Webmaster Tools and submit the same sitemap.
-- Replace the final-review status and add the retailer link when the book is live.
-- Update the structured book metadata if the release date, ISBN, or retailer URL becomes available.
+- Update the structured book metadata now that the Amazon retailer URL is live (e.g., add `offers` to the Book JSON-LD).
 
 ## Local preview
 
@@ -74,4 +73,4 @@ Then open `http://localhost:8000`.
 - Test keyboard navigation and visible focus states.
 - Check the site with JavaScript disabled; the form should still submit normally to Formspree.
 - Confirm domain HTTPS is active.
-- Add the final Amazon link and release date to `the-book.html` and `index.html`.
+

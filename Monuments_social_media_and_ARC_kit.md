@@ -3,7 +3,7 @@
 Author identity: **M. Fawkes**  
 Website: https://monumentsbook.win  
 Book: *Monuments*  
-Status: final review; release date forthcoming
+Status: available now — ebook on Amazon Kindle (https://www.amazon.com/dp/B0HKTP2914)
 
 ## Generated image assets
 
@@ -28,7 +28,7 @@ Do not copy-paste the same message into multiple communities. Adapt each post to
 
 > *Monuments* is a literary cosmic-horror noir about a detective who follows a dead student’s last message into a drowned New England town. The buildings rearrange themselves. The theater knows his name. The machinery recognizes his hands.
 >
-> Final review now. Read the first chapter: https://monumentsbook.win/sample.html
+> Out now on Amazon: https://www.amazon.com/dp/B0HKTP2914 · Read the first chapter: https://monumentsbook.win/sample.html
 >
 > — M. Fawkes
 
@@ -70,7 +70,7 @@ I’m M. Fawkes, the author of *Monuments*, a literary cosmic-horror noir novell
 
 The premise: a private investigator follows a dead student’s last message into a drowned New England town where the buildings rearrange themselves, a theater casts him as its patient, and the machinery recognizes his hands.
 
-The book is currently in final review. If you’re interested, I can provide a free EPUB in exchange for your honest consideration. There is no requirement to review, no deadline unless you prefer one, and no expectation of a positive rating.
+The book is out now in ebook on Amazon Kindle. If you’re interested, I can also provide a free EPUB in exchange for your honest consideration. There is no requirement to review, no deadline unless you prefer one, and no expectation of a positive rating.
 
 The first chapter is available here if you’d like to sample the voice first:
 https://monumentsbook.win/sample.html
